@@ -2,22 +2,17 @@
 
   Característica: Registro de usuario en el portal buggy cars
 
-  Escenario: Registro de usuario nuevo happy patch
-    Dado que se pulsa el boton register
-    Cuando ingrese login correcto nombre apellido clave correcta y confimacion correcta de la clave
-    Entonces se debe crear un nuevo usuario
+  Escenario: Registro de usuario nuevo
+    Dado que franklin desea registrarse en el portal buggy cars
+    Cuando se ingrese los datos solicitados
+    Entonces se debe crear el usuario correctamente
 
-    Característica: Registro de usuario nuevo fallido por login incorrecto
-      Dado que se pulsa el boton register
-  Cuando ingrese login incorrecto nombre apellido clave correcta y confirmacion correcta de la clave
-  Entonces no se puede crear un nuevo usuario
+    Característica: Registro de usuario fallido por error de datos
+      Dado que franklin desea registrarse en el portal buggy cars
+      Cuando ingrese los datos solicitados de manera incorrecta
+      Entonces se debe generar un error
 
-  Característica: Registro de usuario fallido por clave incorrecta
-  Dado que se pulsa el boton register
-  Cuando ingrese login correcto nombre apellido clave incorecta y confirmacion incorrecta de la clave
-  Entonces no se puede crear un nuevo usuario
-
-  Esquema del escenario: Registrar un usuario
+    Esquema del escenario: Registrar un usuario
     Dado que un usuario desea registrarse con su <login> <nombre> <apellido> >contraseña> <confirmacion contraseña>
     Cuando pulsa el boton register
     Entonces debe ser registrado de la siguiente <manera>
