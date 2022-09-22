@@ -25,10 +25,10 @@ public static final Target BOTONREGISTRO =
             Target.the("nombre").located(By.xpath("//*[@id='firstName']"));
 
     public static final Target APELLIDO =
-            Target.the("apellido").located(By.xpath("//*[@id=´lastName´]"));
+            Target.the("apellido").located(By.xpath("//*[@id='lastName']"));
 
     public static final Target PASWORD =
-            Target.the("pasword").located(By.xpath("//*[@id=´password´]"));
+            Target.the("pasword").located(By.xpath("//*[@id='password']"));
 
     public static final Target CONFIRPASWORD =
             Target.the("confirpasword").located(By.xpath("/html/body/my-app/div/main/my-register/div"));
