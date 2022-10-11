@@ -31,6 +31,7 @@ ext {
     junitVersion = '4.13.1'
     assertJVersion = '3.23.1'
     logbackVersion = '1.2.10'
+    hamcrestVersion = '1.3'
 }
 
 dependencies {
@@ -45,7 +46,8 @@ dependencies {
             "org.junit.platform:junit-platform-launcher:1.8.2",
             "org.junit.jupiter:junit-jupiter-engine:5.8.2",
             "org.junit.vintage:junit-vintage-engine:5.8.2",
-            "org.assertj:assertj-core:${assertJVersion}"
+            "org.assertj:assertj-core:${assertJVersion}",
+            "org.hamcrest:hamcrest-all:${hamcrestVersion}"
 }
 
 test {
